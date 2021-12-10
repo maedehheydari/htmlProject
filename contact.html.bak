@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title of the document</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 75px;
+        text-align: right;
+      }
+.navigation1 {
+  width:100%;
+  height:30px;
+  background-color:lightgray;
+}
+.footer {
+  background-color:lightgray;
+  height:150px;
+  
+}.footer2 {
+
+  transform: translate(-5%, 200%);
+
+}
+.title_div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 5px;
+
+  padding-bottom: 5px;
+  
+}
+.meet_plan {
+  border: 1px solid black;
+  background-color: gray;
+  padding-top: 5px;
+
+  padding-bottom: 5px;
+  height:260px;
+
+  
+}
+.meet_plan1 {
+  height:140px;
+  overflow:auto;
+  
+}
+.taeed_button {
+color:blue;
+background-color:lightgray;
+height:40px;
+ width:50px;
+}
+
+    </style>
+  </head>
+  <div class="navigation1">
+  <a href="dif.html" ><span class="style1">معرفی</span> </a>
+  <a href="skill.html" ><span class="style1">مهارت و توانمندی ها</span></a>
+  <a href="eftekharat.html" ><span class="style1">افتخارات و دستاوردها</span></a>
+  <a href="contact.html"  ><span class="style1"> تماس با من </span></a> </div>
+  <body style="direction:rtl">
+ <div class="title_div">
+    <form >
+      <div>
+        <label>نام</label>
+        <input type="text" name="subject"/>
+      </div>
+	  <div>
+        <label>نام خانوادگی </label>
+        <input type="text" name="subject"/>
+      </div>
+      <div>
+        <label>ایمیل</label>
+        <input type="text" name="tarikh"/>
+      </div>
+      <div>
+        <label>متن گزارش</label>
+        <input type="text"  name="personal" style="width:300px;"/>
+      </div>
+  
+    </form>
+   <button class="taeed_button" onclick="function1()">تایید</button>
+</div>
+<div id="submit1"  style="display:none">
+<p id="test1">آیا از ارسال پیام مطمئن هستید؟</p>
+<button onclick="function3()">بله</button>
+<button onclick="function2()">خیر</button>
+</div>
+
+
+
+<script>
+function function1(){
+ document.getElementById("submit1").style.display = "block";
+}
+function function2(){
+ document.getElementById("submit1").style.display = "none";
+}
+function function3(){
+ alert("پیام شما با موفقیت ارسال شد");
+}
+
+</script>
+  </body>
+</html>
+
+
+
+<div class="footer">
+<div class="footer2"><a href="tel:02177335249"> 02177335249 : تلفن</a></div>
+<div class="footer2"><a href="maedeh.heydari212@gmail.com">maedeh.heydari212@gmail.com : ایمیل</a></div>
+<div class="footer2"><a href="https://github.com/maedehheydari"> اکانت گیت هاب من </a></div>
+<div class="footer2"><a href="https://stackoverflow.com/users/17509699/maedeh-heydari?tab=profile">stack over flow accountا</a></div>
+</div>
+</body>
+</html>
